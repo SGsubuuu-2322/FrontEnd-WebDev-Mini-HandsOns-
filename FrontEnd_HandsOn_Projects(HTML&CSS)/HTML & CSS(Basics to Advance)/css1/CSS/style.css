@@ -1,0 +1,10 @@
+#div1{
+	height: 200px;
+	width: 200px;
+/*	background-color: red;*/
+/*  background-color: #393a7b;*/
+/*  background-color: rgb(25, 126, 200);  */
+/*    background-color: rgba(25, 126, 200, 0.8);*/
+/*    background-color: hsl(240, 80%, 54%);*/
+background-color: hsla(240, 90%, 40%, 0.7);
+}
