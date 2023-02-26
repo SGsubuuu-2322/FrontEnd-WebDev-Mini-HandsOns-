@@ -1,0 +1,15 @@
+#logo-img-container{
+
+	height: 100vh;
+	width: 100vw;
+/*	 background-color: red; */
+/*    background-image: src"\ASSETS\SwitchToCode.png";*/
+      background-image: url('file:///D:/CN-MERN_Stack(Web-Development)/Front_End-WebDevs/CSS/BackGround_Image/ASSETS/Fotor_AI%20(1).png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-attachment: fixed;
+
+
+
+}
