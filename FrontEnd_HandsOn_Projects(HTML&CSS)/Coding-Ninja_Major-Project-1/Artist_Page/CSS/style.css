@@ -1,0 +1,795 @@
+/* ----------------------Root HTML Properties----------------------- */
+html {
+    background-color: #0c1027;
+    scroll-behavior: smooth;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  :root {
+    --white: #ffffff;
+  }
+
+  /* ----------------------------------------------------------------- */
+
+  /* ---------------------Common Utility Classes---------------------- */
+
+  .icon-resize {
+    height: 4.0rem;
+    width: 4.0rem;
+  }
+
+  .image-resize{
+    height: 50px;
+    width: 50px;
+  }
+
+  .color-white{
+    color: var(--white);
+  }
+
+  .max-width{
+    width: 30rem;
+  }
+
+  .round-border{
+    border-radius: 50%;
+  }
+
+
+  /* ---------Common playlist Classes---------- */
+  .playlist-spacing{
+    width: 100%;
+    height: 10vh;
+    margin: 0.3rem 0;
+    display: flex;
+    /* border: 3px solid white; */
+    background-color: #1A1E33;
+  }
+
+  .number-spacing{
+    display: inline-block;
+    height: inherit;
+    width: 4%;
+    color: var(--white);
+    /* border: 3px solid white; */
+    padding: 2.5rem 2rem;
+  }
+
+  .song-icon{
+    height: inherit;
+    width: 10%;
+    /* border: 3px solid rgb(0, 187, 137); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-1{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid rgb(251, 246, 0); */
+    background-image: url('https://i.pinimg.com/736x/7e/c1/11/7ec111864f7539dce5362ccf235b61a4--app-logo-app-icon-logo.jpg');
+    background-size: cover;
+  }
+  .icon-2{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid rgb(251, 246, 0); */
+    background-image: url('https://t3.ftcdn.net/jpg/05/51/97/18/360_F_551971815_nXv1fCga04nd9fkjYr0rV0lbu5mG4lHk.jpg');
+    background-size: cover;
+  }
+  .icon-3{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid rgb(251, 246, 0); */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/885/108/small/music-illustration-golden-vinyl-record-and-abstract-sound-graph-on-black-background-retro-style-logo-icon-vector.jpg');
+    background-size: cover;
+  }
+  .icon-4{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid rgb(251, 246, 0); */
+    background-image: url('https://image.winudf.com/v2/image/Y29tLmJlc3RvZmFsYW4ubWl4X2ljb25fMTUzODQ3Njk0Nl8wMTA/icon.png?fakeurl=1&h=240&type=webp');
+    background-size: cover;
+  }
+  .icon-5{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid rgb(251, 246, 0); */
+    background-image: url('https://mentoria.azureedge.net/be0b5b58-863a-41de-8c3a-cfc44116c418_cover_web.jpg');
+    background-size: cover;
+  }
+  .icon-6{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid rgb(251, 246, 0); */
+    background-image: url('https://styles.redditmedia.com/t5_2t9fh/styles/communityIcon_hcf5le2nzd791.jpg?format=pjpg&s=c47e7aef281347c5b4cf3d23395c551058e0ef02');
+    background-size: cover;
+  }
+
+  .song-details{
+    height: inherit;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    /* border: 3px solid red; */
+  }
+  .data{
+    font-size: 1rem;
+    color: var(--white);
+    letter-spacing: 0.1rem;
+  }
+
+  .timing{
+    height: inherit;
+    width: 6%;
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+  }
+
+  .time{
+    color: var(--white);
+    font-size: 1rem;
+  }
+
+  .like-add-icon{
+    height: inherit;
+    width: 20%;
+    /* border: 3px solid wheat; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .like{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  .add{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+
+  .left-space{
+    margin-left: 27rem;
+  }
+  .left-space-1{
+    margin-left: 22rem;
+  }
+
+  /* ---------------------------- */
+
+
+  /* ----------Similar Artist common Classes ---------------*/
+
+  .simi-art-spacing{
+    width: 100%;
+    height: 15vh;
+    /* border: 3px solid wheat; */
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+  }
+
+  .simi-art-image{
+    display: inline-block;
+    height: inherit;
+    width: 30%;
+    /* border: 3px solid red; */
+    background-image: url('https://nypost.com/wp-content/uploads/sites/2/2018/11/imagine1a.jpg?quality=75&strip=all');
+    background-size: cover;
+  }
+
+  .simi-art-details{
+    display: inline-block;
+    height: inherit;
+    width: 40%;
+    /* border: 3px solid rgb(220, 194, 194); */
+    display: flex;
+    align-items: center;
+  }
+  .simi-art-data{
+    color: var(--white);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .bottom-spacing{
+    margin-bottom: 0.6rem;
+  }
+  .left-spacing{
+    margin-left: 0.5rem;
+  }
+  .simi-art-timing{
+    display: inline-block;
+    height: inherit;
+    width: 20%;
+    /* border: 3px solid rgb(0, 247, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .simi-art-time{
+    color: var(--white);
+    font-size: 1rem;
+  }
+
+  /* -------------------------- */
+/* -------Recently_Played---------- */
+
+.recently-played-content{
+    width: 100%;
+    height: 70vh;
+    /* border: 3px solid rgb(223, 197, 197); */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recently-played-spacing{
+    width: 100%;
+    height: 9vh;
+    /* border: 3px solid yellowgreen; */
+    margin: 0.8rem 0;
+    display: flex;
+  }
+
+  .play-icon{
+    height: inherit;
+    width: 20%;
+    /* border: 3px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .play-image-1{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid red; */
+    background-image: url('https://styles.redditmedia.com/t5_2t9fh/styles/communityIcon_hcf5le2nzd791.jpg?format=pjpg&s=c47e7aef281347c5b4cf3d23395c551058e0ef02');
+    background-size: cover;
+  }
+  .play-image-2{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid red; */
+    background-image: url('https://mentoria.azureedge.net/be0b5b58-863a-41de-8c3a-cfc44116c418_cover_web.jpg');
+    background-size: cover;
+  }
+  .play-image-3{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid red; */
+    background-image: url('https://image.winudf.com/v2/image/Y29tLmJlc3RvZmFsYW4ubWl4X2ljb25fMTUzODQ3Njk0Nl8wMTA/icon.png?fakeurl=1&h=240&type=webp');
+    background-size: cover;
+  }
+  .play-image-4{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid red; */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/885/108/small/music-illustration-golden-vinyl-record-and-abstract-sound-graph-on-black-background-retro-style-logo-icon-vector.jpg');
+    background-size: cover;
+  }
+  .play-image-5{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid red; */
+    background-image: url('https://t3.ftcdn.net/jpg/05/51/97/18/360_F_551971815_nXv1fCga04nd9fkjYr0rV0lbu5mG4lHk.jpg');
+    background-size: cover;
+  }
+  .play-image-6{
+    height: 80%;
+    width: 80%;
+    /* border: 3px solid red; */
+    background-image: url('https://i.pinimg.com/736x/7e/c1/11/7ec111864f7539dce5362ccf235b61a4--app-logo-app-icon-logo.jpg');
+    background-size: cover;
+  }
+
+  .recent-song-data{
+    height: inherit;
+    width: 30%;
+    /* border: 3px solid white; */
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+  }
+
+  .like-icon{
+    height: inherit;
+    width: 20%;
+    /* border: 3px solid red; */
+    color: var(--white);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 6rem;
+  }
+
+
+/* ------------------------------ */
+  .test-trial{
+    text-emphasis: none;
+  }
+
+
+
+  /* ------------------------------------------------------------------ */
+
+  /* --------------------------Header---------------------------------- */
+
+  #header {
+    height: 13vh;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    /* border: 4px solid white; */
+  }
+
+  .main-head{
+    height: inherit;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    /* border: 3px solid burlywood; */
+    background-color: #0c1027;
+  }
+
+  .app-icon{
+    display: inline-block;
+    height: inherit;
+    padding: 2rem 0rem;
+    margin-left: 2rem;
+    /* border: 3px solid rebeccapurple; */
+  }
+
+  /* --------------------NavBar------------------- */
+
+
+  #navbar {
+    display: inline-block;
+    height: inherit;
+    width: 96%;
+    /* border: 3px solid rgb(255, 166, 0); */
+    background-color: #0c1027;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* #left{
+    border: 3px solid white;
+  } */
+
+  #left li{
+    padding: 2.3rem 0rem;
+    margin: -0.5rem 0rem;
+    margin-right: 9rem;
+    margin-left: 1rem;
+  }
+
+  /* #right{
+    border: 3px solid white;
+  } */
+
+  #right li{
+    padding: 1rem 0rem;
+    margin: 0.5rem 0rem;
+    margin-right: 3rem;
+  }
+
+
+
+  #navbar ul li {
+    list-style: none;
+    display: inline-block;
+    /* padding: 2.3rem 0rem;
+    margin: -1rem 0rem;
+    margin-right: 9rem; */
+    font-size: 1.7rem;
+  }
+
+  .spacing{
+    padding: 0rem 1rem;
+  }
+
+  .search-container {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: #12193e;
+    font-size: 1.7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+
+  .right-spacing{
+    margin-right: 1rem;
+  }
+  
+  .transparent {
+    border: none;
+    color: var(--white);
+    background-color: transparent;
+  }
+
+
+  /* -------------------------------------------------------------------- */ 
+
+
+  /* ----------------------------Main-Section------------------------------ */
+
+  main{
+    height: 140vh;
+    width: 100%;
+    display: flex;
+    /* border: 3px solid red; */
+  }
+
+  .left-section{
+    height: inherit;
+    width: 5%;
+    /* border: 3px solid rgb(100, 255, 3); */
+  }
+
+  /* ------Main & Content Section------------ */
+  .main-section{
+    height: inherit;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid rgb(242, 255, 0); */
+  }
+
+  .left-aside{
+    height: inherit;
+    width: 69%;
+    /* border: 3px solid white; */
+  }
+
+  .artist-details{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid whitesmoke; */
+    background-color: #141B41;
+  }
+
+  .artist{
+    height: 45vh;
+    width: 39%;
+    /* border: 3px solid red; */
+
+    background-image: url('https://www.funktasy.com/wp-content/uploads/2017/05/Funktasy_Why_Coldplay_is_Biggest_Pop-Band_of_This_Era.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
+  }
+  .details{
+    height: 45vh;
+    width: 59%;
+    /* border: 3px solid rgb(0, 255, 76); */
+  }
+
+
+
+  .heading {
+    margin-top: 3rem;
+    width: 100%;
+    height: 5vh;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title {
+    display: inline-block;
+    color: var(--white);
+    align-self: flex-end;
+    font-size: 2rem;
+  }
+  
+  .side-title {
+    display: inline-block;
+    color: var(--white);
+    align-self: flex-end;
+    margin-right: 1rem;
+  }
+
+  .sub-title {
+    margin-top: 0.3rem;
+    color: var(--white);
+  }
+  
+  .band-details p {
+    margin-top: 15px;
+    color: var(--white);
+    font-weight: lighter;
+  }
+
+  .play-feat{
+    margin-top: 3rem;
+    height: 10vh;
+    width: 60%;
+    display: flex;
+    /* border: 3px solid white; */
+  }
+
+  .btn{
+    display: inline-block;
+  }
+
+  .btn-details {
+    color: var(--white);
+    font-size: 11px;
+  }
+  
+  .button{
+    color: var(--white);
+    padding: 1rem 3.8rem;
+    background: rgb(60,51,210);
+    background: linear-gradient(90deg, rgba(60,51,210,1) 0%, rgba(9,9,121,1) 0%, rgba(193,0,255,1) 100%);
+  }
+  .follow-feat {
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    margin-left: 80px;
+    color: var(--white);
+    align-self: center;
+  }
+
+  /* --------------- */
+
+  /* ---Playlist------ */
+
+  .playlist{
+    margin-top: 2rem;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid red; */
+  }
+
+/* ------------------------------ */
+
+/* -----------right-aside--------- */
+  .right-aside{
+    height: inherit;
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid rgb(255, 0, 0); */
+  }
+
+  .similar-artist{
+    height: 60vh;
+    width: 100%;
+    /* border: 3px solid white; */
+  }
+
+  .simi-art-heading{
+    height: 5vh;
+    width: 100%;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.2rem;
+  }
+
+  .simi-art-content{
+    width: 100%;
+    height: 50vh;
+    /* margin-top: 2rem; */
+    /* border: 3px solid white; */
+  }
+
+  /* ------Recently-Played-------- */
+
+  .recently-played{
+    height: 80vh;
+    width: 100%;
+    /* border: 3px solid rgb(230, 244, 28); */
+  }
+
+ 
+  /* ------------------------------------------ */
+  .right-section{
+    height: inherit;
+    width: 5%;
+    /* border: 3px solid rgb(0, 17, 255); */
+  }
+
+  /* ---------------------------------------------------------------------- */
+
+  /* --------------Footer----------------- */
+
+  footer{
+    position: relative;
+    top: 0px;
+  }
+
+  .track{
+    height: 10vh;
+    width: 100%;
+    /* border: 3px solid white; */
+    position: fixed;
+    bottom: 0;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .song-data{
+    height: 8vh;
+    width: 15%;
+    /* border: 3px solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .music-image{
+    height: 6vh;
+    width: 26%;
+    background-image: url('https://img.mensxp.com/media/content/2022/Apr/HD-wallpaper-arjith-singh-bollywood-singer_6266ab32cc8d5.jpeg');
+    background-size: cover;
+    /* border: 3px solid white; */
+  }
+  .music-data{
+    height: 6vh;
+    width: 38%;
+    font-size: 1rem;
+    color: var(--white);
+    letter-spacing: 0.1rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 3px solid white; */
+  }
+
+  .top-spacing{
+    margin-top: 0.2rem;
+  }
+  .music-like-btn{
+    height: 6vh;
+    width: 24%;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.4rem;
+    /* border: 3px solid white; */
+  }
+
+  .song-track{
+    height: 8vh;
+    width: 25%;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .track-feat{
+    height: 3vh;
+    width: 50%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+  }
+  .track-range{
+    height: 3vh;
+    width: 90%;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .max-range{
+    height: 30%;
+    width: 80%;
+    border-radius: 10%;
+    background-color: #d4d1d1;
+    border-radius: 2rem;
+  }
+
+  .main-range{
+    height: 100%;
+    width: 60%;
+    border-radius: 10%;
+    background: rgb(60,51,210);
+    background: linear-gradient(90deg, rgba(60,51,210,1) 0%, rgba(30,121,9,1) 0%, rgba(255,255,255,1) 100%);
+  }
+
+  .track-spot{
+    height: 50%;
+    width: 3%;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: auto;
+    right: 127px;
+  }
+
+
+  .song-volume{
+    height: 8vh;
+    width: 20%;
+    /* border: 3px solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 1rem;
+    color: var(--white);
+    position: relative;
+    
+  }
+
+  .range{
+    height: 12%;
+    width: 30%;
+    border-radius: 10%;
+    background-color: #d4d1d1;
+    border-radius: 2rem;
+  }
+
+  .volume-range{
+    height: 100%;
+    width: 60%;
+    border-radius: 10%;
+    background: rgb(60,51,210);
+    background: linear-gradient(90deg, rgba(60,51,210,1) 0%, rgba(30,121,9,1) 0%, rgba(255,255,255,1) 100%);
+  }
+
+  .volume-spacing{
+    margin-right: 1.5rem;
+  }
+
+  .spot{
+    height: 20%;
+    width: 4%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: auto;
+    right: 130px;
+  }
+
+  /* .music-list{
+    width: 5%;
+    height: 5%;
+    border: 3px solid red;
+  }
+
+  .computer-speaker{
+    width: 5%;
+    height: 5%;
+    border: 3px solid red;
+  } */

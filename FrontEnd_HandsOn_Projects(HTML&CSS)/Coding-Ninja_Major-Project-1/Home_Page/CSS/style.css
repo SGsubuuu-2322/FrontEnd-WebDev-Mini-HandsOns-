@@ -1,0 +1,846 @@
+/* ----------------------Root HTML Properties----------------------- */
+html {
+    background-color: #0c1027;
+    scroll-behavior: smooth;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  :root {
+    --white: #ffffff;
+  }
+
+  /* ----------------------------------------------------------------- */
+
+
+  /* --------------------Common Utility------------------------------ */
+
+  .icon-resize {
+    height: 4.0rem;
+    width: 4.0rem;
+  }
+
+  .image-resize{
+    height: 50px;
+    width: 50px;
+  }
+
+  .color-white{
+    color: var(--white);
+  }
+
+  .max-width{
+    width: 30rem;
+  }
+
+  .round-border{
+    border-radius: 50%;
+  }
+
+  .innerbody-top-spacing{
+    margin-top: 1.5rem;
+  }
+
+  
+
+  /* ------------------------------------------------------------------------- */
+
+.margin-box{
+  height: 50vh;
+  width: 100%;
+  /* border: 3px solid red; */
+}
+
+
+  /* --------------------------Header---------------------------------- */
+
+  header{
+    height: 15vh;
+    width: 100%;
+    /* border: 3px solid white; */
+    position: relative;
+  }
+
+  .navbar{
+    height: inherit;
+    width: 100%;
+    /* border: 3px solid rgb(255, 0, 0); */
+    background-color: #0c1027;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+  }
+  .nav-icon{
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+  }
+  nav{
+    height: inherit;
+    width: 93%;
+    /* border: 3px solid white; */
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-menu{
+    height: 80%;
+    width: 100%;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-menu{
+    height: 100%;
+    width: 40%;
+    /* border: 3px solid white; */
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.5rem;
+  }
+  .brand-name{
+    margin-right: 8rem;
+  }
+  .right-menu{
+    height: 100%;
+    width: 35%;
+    /* border: 3px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+    font-size: 1.5rem;
+  }
+
+  .search-container {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: #12193e;
+    font-size: 1.7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+  .transparent {
+    border: none;
+    color: var(--white);
+    background-color: transparent;
+  }
+
+  main{
+    height: 140vh;
+    width: 91%;
+    margin: 0 auto;
+    /* border: 3px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-body{
+  height: inherit;
+  width: 70%;
+  /* border: 3px solid red; */
+}
+
+.header-images{
+  width: 100%;
+  height: 30%;
+  /* border: 3px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+.h-img{
+  height: 100%;
+  width: 32%;
+  /* border: 3px solid greenyellow; */
+}
+.h-img1{
+  background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/158262294/original/385aa8288ebaaca4c3e79e5496427eef7bff74b5/create-your-playlist-cover-ready-for-spotify-and-itunes.jpg');
+  background-size: cover;
+}
+.h-img2{
+  background-image: url('https://i.scdn.co/image/ab67706f00000002a231f671c289555cfd09f716');
+  background-size: cover;
+}
+.h-img3{
+  background-image: url('https://shootmusic.co.uk/wp-content/uploads/2021/06/Kurupt-Album-Cover-3000px-30dpi-copy-1-1024x1024.jpg');
+  background-size: cover;
+}
+
+
+.header-latest-release{
+  width: 100%;
+  height: 35%;
+  /* border: 3px solid white; */
+}
+.hlr-title{
+  display: inline-block;
+  height: 14%;
+  color: var(--white);
+  font-size: 2rem;
+  /* border: 3px solid white; */
+  display: flex;
+  align-items: center;
+}
+
+.hlr-body{
+  width: 100%;
+  height: 85%;
+  /* border: 3px solid rebeccapurple; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.hlr-body-box{
+  height: 50%;
+  width: 50%;
+  /* border: 3px solid white; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.hlr-bb-img{
+  height: 90%;
+  width: 30%;
+  /* border: 3px solid red; */
+}
+.bb-img1{
+  background-image: url('https://cdn.wallpapersafari.com/78/66/8h2l7i.jpg');
+  background-size: cover;
+}
+
+.hlr-bb-body{
+  height: 90%;
+  width: 62%;
+  /* border: 3px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  font-size: 1.3rem;
+}
+.hlr-body-icon{
+  height: 40%;
+  width: 10%;
+  /* border: 2px solid white; */
+}
+.hlr-right-spacing{
+  margin-right: 1rem;
+}
+
+
+
+.header-top-spacing{
+  margin-top: 2rem;
+}
+
+
+/* ---------Aside----------- */
+aside{
+  height: 140vh;
+  width: 28%;
+  /* border: 3px solid rgb(195, 255, 0); */
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-title{
+  height: 5%;
+  width: 100%;
+  /* border: 3px solid #ffffff; */
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+.title{
+  height: 100%;
+  width: 25%;
+  /* border: 3px solid rgb(221, 0, 255); */
+  font-weight: bolder;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+.aside-title-spacing{
+  margin-top: 2.5rem;
+}
+.sub-title{
+  height: 100%;
+  width: 15%;
+  /* border: 3px solid rgb(0, 247, 255); */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.3rem;
+}
+.aside-body{
+  height: 300vh;
+  width: 100%;
+  /* border: 3px solid #48ff00; */
+  display: flex;
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+}
+
+.aside-main-body{
+  height: 95%;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ------Aside Common Utility--------- */
+.aside-box{
+  width: 100%;
+  height: 8vh;
+  margin-bottom: 1rem;
+  /* border: 3px solid red; */
+  display: flex;
+}
+.number-spacing{
+  height: 100%;
+  width: 6%;
+  /* border: 3px solid white; */
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.queue-right-spacing{
+  margin-right: 0.8rem;
+}
+
+.queue-image{
+  height: 100%;
+  width: 16%;
+  /* border: 3px solid white; */
+}
+.img-1{
+  height: 100%;
+  width: 100%;
+  background-image: url('https://i.pinimg.com/736x/7e/c1/11/7ec111864f7539dce5362ccf235b61a4--app-logo-app-icon-logo.jpg');
+  background-size: cover;
+}
+.img-2{
+  height: 100%;
+  width: 100%;
+  background-image: url('https://mentoria.azureedge.net/be0b5b58-863a-41de-8c3a-cfc44116c418_cover_web.jpg');
+  background-size: cover;
+}
+.img-3{
+  height: 100%;
+  width: 100%;
+  background-image: url('https://image.winudf.com/v2/image/Y29tLmJlc3RvZmFsYW4ubWl4X2ljb25fMTUzODQ3Njk0Nl8wMTA/icon.png?fakeurl=1&h=240&type=webp');
+  background-size: cover;
+}
+.img-4{
+  height: 100%;
+  width: 100%;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/885/108/small/music-illustration-golden-vinyl-record-and-abstract-sound-graph-on-black-background-retro-style-logo-icon-vector.jpg');
+  background-size: cover;
+}
+.img-5{
+  height: 100%;
+  width: 100%;
+  background-image: url('https://t3.ftcdn.net/jpg/05/51/97/18/360_F_551971815_nXv1fCga04nd9fkjYr0rV0lbu5mG4lHk.jpg');
+  background-size: cover;
+}
+.img-6{
+  height: 100%;
+  width: 100%;
+  background-image: url('https://i.pinimg.com/736x/7e/c1/11/7ec111864f7539dce5362ccf235b61a4--app-logo-app-icon-logo.jpg');
+  background-size: cover;
+}
+
+.queue-body{
+  height: 100%;
+  width: 73%;
+  /* border: 3px solid #48ff00; */
+  display: flex;
+  justify-content: space-between;
+}
+.queue-title{
+  height: 100%;
+  width: 40%;
+  /* border: 3px solid #ffffff; */
+  color: var(--white);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.queue-icon{
+  height: 100%;
+  width: 40%;
+  /* border: 3px solid #ffffff; */
+  color: var(--white);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+
+
+/* ----------------------------------- */
+
+/* ----------Artist-Profile---------- */
+
+.artist-profile{
+  height: 20%;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist-box{
+  height: 100%;
+  width: 20%;
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist-img{
+  height: 85%;
+  width: 84%;
+  border-radius: 50%;
+  /* border: 3px solid red; */
+  margin-bottom: 0.5rem;
+}
+
+.artist1{
+  background-image: url('https://media1.popsugar-assets.com/files/thumbor/IkuK05q1CgDG5g1AquxDDaDDWVU/527x0:2527x2000/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2022/12/02/715/n/1922398/5da4eb3f638a2361575372.24598315_/i/who-has-charlie-puth-dated.jpg');
+  background-size: cover;
+}
+.artist2{
+  background-image: url('https://www.rollingstone.com/wp-content/uploads/2023/03/230117_Black_Tee_0005-1.jpg?w=819');
+  background-size: cover;
+}
+.artist3{
+  background-image: url('https://i1.sndcdn.com/avatars-000237271265-7hhnty-t500x500.jpg');
+  background-size: cover;
+}
+.artist4{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Zayn_Wiki_%28cropped%29.jpg/800px-Zayn_Wiki_%28cropped%29.jpg');
+  background-size: cover;
+}
+.artist5{
+  background-image: url('https://recording-history.org/wp-content/uploads/2020/03/imagine-dragons-songs.jpg');
+  background-size: cover;
+}
+.artist-name{
+  color: var(--white);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* ------------------------------------ */
+
+/* -------------Stations----------------- */
+
+.stations{
+  width: 100%;
+  height: 25vh;
+  /* border: 3px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #25337A;
+}
+
+.stn-sqr{
+  height: 80%;
+  width: 16%;
+  /* border: 3px solid red; */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9HuEMuJQj-jkgH707zMapVh9WIxZ1z74eG4OBMuivK434lPg62RuqMPFCkJ21sWjg7_8&usqp=CAU');
+  background-size: cover;
+}
+
+.stn-crcl{
+  height: 80%;
+  width: 16%;
+  /* border: 3px solid red; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.8rem;
+}
+.crcl-img1{
+  content: "";
+  background-image: url('https://i0.wp.com/www.weddingforward.com/wp-content/uploads/2021/03/love-songs-for-her-outdoor-kiss-couple-unsplash.jpg?fit=313%2C500&ssl=1');
+  background-size: cover;
+  opacity: 0.5;
+}
+.crcl-img2{
+  content: "";
+  background-image: url('https://e1.pxfuel.com/desktop-wallpaper/706/318/desktop-wallpaper-retro-music-instrumental-playlist-music-background.jpg');
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.crcl-img3{
+  content: "";
+  background-image: url('https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61jNSHBk1TL._UXNaN_FMjpg_QL85_.jpg');
+  background-size: cover;
+  opacity: 0.5;
+}
+.crcl-img4{
+  content: "";
+  background-image: url('https://hips.hearstapps.com/hmg-prod/images/athlete-training-with-dumbbells-in-gym-screaming-royalty-free-image-722227993-1547756570.jpg');
+  background-size: cover;
+  opacity: 0.5;
+}
+
+/* ------------------------------------------ */
+
+/* ------------------Music Choice Box----------------- */
+
+
+.music-choice-box{
+  height: 25vh;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.mcb{
+  height: 100%;
+  width: 32%;
+  /* border: 3px solid red; */
+  position: relative;
+}
+
+.mcb-img1{
+  height: 100%;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.mcb-img1::before{
+  content: '';
+  background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFydHl8ZW58MHx8MHx8&w=1000&q=80')  no-repeat center center/cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.mcb-img2{
+  height: 100%;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.mcb-img2::before{
+  content: '';
+  background: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZWxlY3Ryb25pYyUyMG11c2ljfGVufDB8fDB8fA%3D%3D&w=1000&q=80')  no-repeat center center/cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.mcb-img3{
+  height: 100%;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.mcb-img3::before{
+  content: '';
+  background: url('https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/road_journey.jpg')  no-repeat center center/cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+
+/* -------------------------------------------------- */
+
+/* -------------Playlist-Common Utility------------------- */
+
+.playlist-box{
+  height: 35vh;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.playlist-title{
+  height: 15%;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.playlist-body{
+  height: 80%;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end;
+  font-size: 1.5rem;
+  color: var(--white); */
+}
+
+.playlist-boxes{
+  height: 100%;
+  width: 16%;
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.playlist-imgs{
+  height: 80%;
+  width: 100%;
+  /* border: 3px solid white; */
+}
+.playlist-box-title{
+  height: 17%;
+  width: 100%;
+  /* border: 3px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------English-Playlist---------------------- */
+
+/* -------------------------------------------------- */
+
+/* ------------Hindi-Playlist------------------------- */
+
+/* --------------------------------------------------- */
+
+/* --------------Footer----------------- */
+
+footer{
+  position: relative;
+  top: 0px;
+}
+
+.track{
+  height: 10vh;
+  width: 100%;
+  /* border: 3px solid white; */
+  position: fixed;
+  bottom: 0;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.song-data{
+  height: 8vh;
+  width: 15%;
+  /* border: 3px solid red; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.music-image{
+  height: 6vh;
+  width: 26%;
+  background-image: url('https://img.mensxp.com/media/content/2022/Apr/HD-wallpaper-arjith-singh-bollywood-singer_6266ab32cc8d5.jpeg');
+  background-size: cover;
+  /* border: 3px solid white; */
+}
+.music-data{
+  height: 6vh;
+  width: 38%;
+  font-size: 1rem;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 3px solid white; */
+}
+
+.top-spacing{
+  margin-top: 0.2rem;
+}
+.music-like-btn{
+  height: 6vh;
+  width: 24%;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.4rem;
+  /* border: 3px solid white; */
+}
+
+.song-track{
+  height: 8vh;
+  width: 25%;
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.track-feat{
+  height: 3vh;
+  width: 50%;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+.track-range{
+  height: 3vh;
+  width: 90%;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--white);
+  font-size: 1rem;
+  position: relative;
+}
+
+.max-range{
+  height: 30%;
+  width: 80%;
+  border-radius: 10%;
+  background-color: #d4d1d1;
+  border-radius: 2rem;
+}
+
+.main-range{
+  height: 100%;
+  width: 60%;
+  border-radius: 10%;
+  background: rgb(60,51,210);
+  background: linear-gradient(90deg, rgba(60,51,210,1) 0%, rgba(30,121,9,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.track-spot{
+  height: 50%;
+  width: 3%;
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: auto;
+  right: 127px;
+}
+
+
+.song-volume{
+  height: 8vh;
+  width: 20%;
+  /* border: 3px solid red; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: 1rem;
+  color: var(--white);
+  position: relative;
+  
+}
+
+.range{
+  height: 12%;
+  width: 30%;
+  border-radius: 10%;
+  background-color: #d4d1d1;
+  border-radius: 2rem;
+}
+
+.volume-range{
+  height: 100%;
+  width: 60%;
+  border-radius: 10%;
+  background: rgb(60,51,210);
+  background: linear-gradient(90deg, rgba(60,51,210,1) 0%, rgba(30,121,9,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.volume-spacing{
+  margin-right: 1.5rem;
+}
+
+.spot{
+  height: 20%;
+  width: 4%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: auto;
+  right: 130px;
+}
+
+/* .music-list{
+  width: 5%;
+  height: 5%;
+  border: 3px solid red;
+}
+
+.computer-speaker{
+  width: 5%;
+  height: 5%;
+  border: 3px solid red;
+} */
