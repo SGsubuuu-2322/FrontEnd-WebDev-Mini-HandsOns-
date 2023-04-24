@@ -1,0 +1,57 @@
+a:link{
+	color:yellow;
+}
+a:active{
+	color: red;
+}
+a:visited{
+	color:green;
+}
+p:active{
+	background-color: cyan;
+}
+
+/*---first-letter-----*/
+.sfl::first-line{
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+h2{
+	background-color: lightgrey;
+}
+
+h2::before{
+	content:'Before';
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: capitalize;
+
+}
+
+h2::after{
+	content:'';
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-size: contain;
+	background-image: url('file:///D:/CN-MERN_Stack(Web-Development)/Front_End-WebDevs/CSS/Pseudo-Classes/ASSETS/Fotor_AI%20(3).png');
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: capitalize;
+
+}
+
+ul{
+	list-style: none;
+}
+
+li::before{
+	content: '';
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-size: contain;
+	background-image: url('file:///D:/CN-MERN_Stack(Web-Development)/Front_End-WebDevs/CSS/Pseudo-Classes/ASSETS/Fotor_AI%20(3).png');
+}
