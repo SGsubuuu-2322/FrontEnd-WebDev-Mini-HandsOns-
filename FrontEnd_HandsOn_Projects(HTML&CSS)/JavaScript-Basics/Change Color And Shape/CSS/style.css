@@ -1,0 +1,107 @@
+#outer{
+	width: 38%;
+	height: 40vh;
+/*	border: 4px solid red;*/
+	margin: auto;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#container{
+	box-sizing: border-box;
+	width: 40%;
+	height: 95%;
+/*	border: 4px solid red;*/
+	border-radius: 50%;
+	background-color: blueviolet;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all ease-in-out 0.2s;
+}
+
+#btns{
+	margin-top: 10px;
+	width: 60%;
+	height: 25%;
+/*	border: 4px solid red;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+button{
+	height: 60%;
+	width: 100%;
+	margin-bottom: 5px;
+	font-weight: bolder;
+    background-color: #d5d5d5;
+    border: 1px solid salmon;
+}
+
+.circle{
+	height: 50%;
+	width: 50%;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
+}
+
+.rectangle {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
+}
+.triangle-up {
+  height: 0px;
+  width: 0px;
+  border-bottom: 100px solid white;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+.triangle-down {
+  height: 0px;
+  width: 0px;
+  border-top: 100px solid white;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+.triangle-bottom-left {
+  height: 0px;
+  width: 0px;
+  border-top: 100px solid white;
+  border-right: 100px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+.triangle-bottom-right {
+  height: 0px;
+  width: 0px;
+  border-top: 100px solid white;
+  border-left: 100px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+.triangle-top-left {
+  height: 0px;
+  width: 0px;
+  border-bottom: 100px solid white;
+  border-right: 100px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+.triangle-top-right {
+  height: 0px;
+  width: 0px;
+  border-bottom: 100px solid white;
+  border-left: 100px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
