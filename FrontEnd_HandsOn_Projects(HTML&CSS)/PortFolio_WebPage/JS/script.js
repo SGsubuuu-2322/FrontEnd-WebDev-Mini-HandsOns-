@@ -152,6 +152,7 @@ function scrollVertically(targetSectionContent){
 }*/
 
 var navbarAnchorTags = document.querySelectorAll('.nav-menu a');
+var interval;
 
 for(var i = 0; i < navbarAnchorTags.length; i++){
 	navbarAnchorTags[i].addEventListener('click', function(event){
@@ -161,7 +162,7 @@ for(var i = 0; i < navbarAnchorTags.length; i++){
 		var targetSectionContent = document.getElementById(targetSectionID);
 		// console.log(targetSectionContent);
 		console.log(i);
-		var interval = setInterval(scrollVertically, 20, targetSectionContent);
+		interval = setInterval(scrollVertically, 20, targetSectionContent);
 	});
 }
 
@@ -169,11 +170,11 @@ for(var i = 0; i < navbarAnchorTags.length; i++){
 function scrollVertically(targetSectionContent){
 	var targetSectionCo = targetSectionContent.getBoundingClientRect();
 	console.log(targetSectionCo);
-	if(targetSectionCo <= 0){
+	if(targetSectionCo.top <= 0){
 		clearInterval(interval);
 		return;
 	}
-	window.scrollBy(0, 50);
+	window.scrollBy(0, 5000);
 }
 
 

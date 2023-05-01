@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CN-Calculator</title>
+    <!-- FavIcon.... -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/hngr1vxmwf3pxuzxsmit"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@300&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Css.... -->
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
+  </head>
+  <body>
+    <div id="calBox">
+      <div class="display">
+        <input type="text" id="screen" placeholder="00" />
+      </div>
+      <div class="btns">
+        <button type="text" class="btn" id="clr-dp" onclick="wipe()">AC</button>
+        <button type="text" class="btn" id="clr" onclick="wipe('')">C</button>
+        <button type="text" class="btn" id="prcntg" onclick="show('%')">
+          %
+        </button>
+        <button type="text" class="btn" id="div" onclick="show('/')">/</button>
+        <button type="text" class="btn" id="seven" onclick="show('7')">
+          7
+        </button>
+        <button type="text" class="btn" id="eight" onclick="show('8')">
+          8
+        </button>
+        <button type="text" class="btn" id="nine" onclick="show('9')">9</button>
+        <button type="text" class="btn" id="mult" onclick="show('*')">*</button>
+        <button type="text" class="btn" id="four" onclick="show('4')">4</button>
+        <button type="text" class="btn" id="five" onclick="show('5')">5</button>
+        <button type="text" class="btn" id="six" onclick="show('6')">6</button>
+        <button type="text" class="btn" id="minus" onclick="show('-')">
+          -
+        </button>
+        <button type="text" class="btn" id="one" onclick="show('1')">1</button>
+        <button type="text" class="btn" id="two" onclick="show('2')">2</button>
+        <button type="text" class="btn" id="three" onclick="show('3')">
+          3
+        </button>
+        <button type="text" class="btn" id="plus" onclick="show('+')">+</button>
+        <button type="text" class="btn-0" id="zero" onclick="show('0')">
+          0
+        </button>
+        <button type="text" class="btn" id="decimal" onclick="show('.')">
+          .
+        </button>
+        <button type="text" class="btn" id="equal" onclick="calc('=')">
+          =
+        </button>
+      </div>
+    </div>
+
+    <!-- External Js.... -->
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
