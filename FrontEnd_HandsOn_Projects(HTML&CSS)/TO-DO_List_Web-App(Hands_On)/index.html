@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link For Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Lobster', cursive;
+    font-family: 'Satisfy', cursive; -->
+
+    <!-- Link for Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/242f87e62a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link For External Css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>ToDo_List-App</title>
+  </head>
+  <body>
+    <div id="todo-container">
+      <h1 id="heading">ToDo_List App</h1>
+      <div class="add-task-box">
+        <input
+          type="text"
+          class="add-task"
+          placeholder="Add Your Task..."
+          id="add"
+        />
+        <button class="add-btn">Add_It...</button>
+      </div>
+      <div class="counter-box">
+        <span>Total Tasks: <span id="task-counter">0</span></span>
+      </div>
+      <div id="tasks-title">
+        <h3>ToDo_Tasks...</h3>
+      </div>
+      <div class="task-list">
+        <ul id="list">
+          <!-- <li>
+            <div class="list-data">
+              <input type="checkbox" id="task1" />
+              <label for="task1">Buy groceries</label>
+            </div>
+            <img src="/bin.png" class="delete" data-id="12" />
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
