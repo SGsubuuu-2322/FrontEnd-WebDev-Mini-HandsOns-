@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  top: 0;
+  background-color: whitesmoke;
+}
+
+.outer-box {
+  width: 120px;
+  height: 50px;
+  border: 4px solid black;
+  border-radius: 2em;
+  box-shadow: 6px 10px 6px rgb(50, 48, 48);
+  position: absolute;
+  top: 50px;
+  left: 50%;
+}
+
+.inner-btn {
+  height: 100%;
+  width: 35%;
+  background-color: black;
+  border-radius: 12em;
+  transition: all 0.5s;
+}
+
+.slider {
+  transform: translateX(74px);
+}
