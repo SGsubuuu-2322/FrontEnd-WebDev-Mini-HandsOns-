@@ -15,7 +15,7 @@ $.ajax({
   method: "GET",
   success: getImage,
   data: {
-    api_key: "DEMO_KEY",
-    date: "2020-09-22",
+    api_key: "rTmjxHqtIWX95Vhb4gkSYjNWWTJ8QhnmqquotWbe",
+    date: "2022-09-22",
   },
 });
