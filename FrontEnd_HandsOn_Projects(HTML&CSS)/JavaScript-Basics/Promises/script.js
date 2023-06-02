@@ -1,9 +1,26 @@
-const promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve();
-  }, 2000);
-});
+var userLoggedIn = false;
 
-promise.then(() => {
-  console.log("Promise resolved...");
-});
+function checkUserLoggedIn() {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (userLoggedIn) {
+        resolve("Promise resolved...");
+      } else {
+        reject("Promise Rejected...");
+      }
+    }, 2000);
+  });
+  return promise;
+}
+
+setTimeout(() => {
+  userLoggedIn = !userLoggedIn;
+}, 500);
+
+checkUserLoggedIn()
+  .then((successmsg) => {
+    console.log(successmsg);
+  })
+  .catch((failuremsg) => {
+    console.log(failuremsg);
+  });
