@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- External CSS file -->
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <span><i class="fas fa-address-book"></i></span>
+        <span>Dynamic_Phone-Book</span>
+      </div>
+    </header>
+    <div class="IO-container">
+      <div class="heading">
+        <span>
+          <h2>Name</h2>
+        </span>
+        <span>
+          <h2>Phone_No.</h2>
+        </span>
+      </div>
+      <div class="O-container">
+        <ul>
+          <% for(let i of contacts){ %>
+          <li class="brd-cls">
+            <span class="data">
+              <span><h3><%= i.name %></h3></span>
+              <span><h5><%= i.phone %></h5></span>
+            </span>
+            <span class="dlt-btn">
+              <a href="/delete-contact/?id=<%= i.id %>">
+                <i class="fas fa-window-close"></i>
+              </a>
+            </span>
+          </li>
+          <%}%>
+        </ul>
+      </div>
+      <div class="I-container">
+        <form action="/create-contact" method="post" id="form">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter the name..."
+            required
+          />
+          <input
+            type="number"
+            name="phone"
+            placeholder="Enter the number..."
+            required
+          />
+
+          <button type="submit">ADD IT</button>
+        </form>
+      </div>
+    </div>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
